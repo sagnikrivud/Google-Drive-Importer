@@ -33,6 +33,19 @@ $ composer install
 GOOGLE_API_KEY='your-google-api-key'
 ```
 > Generate google client json file and put the file under application/public/Google/ 
+
+> Fill the DB details at .env
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=''
+DB_USERNAME=''
+DB_PASSWORD=''
+```
+```sh
+$ php artisan migrate
+```
 ### Custom make Job command
 ```sh
 $ php artisan make:job SampleJob

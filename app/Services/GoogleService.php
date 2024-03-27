@@ -13,4 +13,15 @@ class GoogleService {
   public function __construct() {
     $this->googleClient =  new Client();
   }
+
+  /**
+   * Handle Upload process
+   *
+   * @param [type] $request
+   * @return void
+   */
+  public function uploadProcess($request)
+  {
+    return true;
+  }
 }

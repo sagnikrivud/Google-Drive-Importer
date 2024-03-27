@@ -32,6 +32,7 @@ $ composer install
 ```env
 GOOGLE_API_KEY='your-google-api-key'
 ```
+> Generate google client json file and put the file under application/public/Google/ 
 ### Custom make Job command
 ```sh
 $ php artisan make:job SampleJob

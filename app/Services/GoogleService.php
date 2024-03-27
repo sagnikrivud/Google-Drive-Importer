@@ -27,6 +27,14 @@ class GoogleService {
     $this->googleClient->setAuthConfig($this->publicPath('Google/client.json'));
     $this->googleClient->setAccessType('offline');
     $this->googleClient->addScope(\Google_Service_Drive::DRIVE_FILE);
+    if ($request->has('code')) {
+      $client->fetchAccessTokenWithAuthCode($request->input('code'));
+      $accessToken = $client->getAccessToken();
+      } else {
+      // Redirect to Google for authorization
+      $authUrl = $client->createAuthUrl();
+      return redirect()->to($authUrl);
+    }
     $driveService = new \Google_Service_Drive($this->googleClient);
     $files = $driveService->files->listFiles();
     return response()->json($files);

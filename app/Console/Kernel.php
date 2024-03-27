@@ -14,7 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\MakeJob::class,
-        Commands\MakeService::class
+        Commands\MakeService::class,
+        Commands\CacheClear::class
     ];
 
     /**

@@ -24,6 +24,11 @@ $ git clone https://github.com/sagnikcapital/Google-Drive-Up-loader.git
 ```sh
 $ cp .env.example .env
 ```
+> Generate Application Key
+```sh
+$ php -r "echo bin2hex(random_bytes(16));"
+```
+- Copy the string and paste at.env at APP_KEY value
 > Composer install
 ```sh
 $ composer install

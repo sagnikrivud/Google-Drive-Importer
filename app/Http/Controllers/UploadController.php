@@ -33,4 +33,13 @@ class UploadController extends Controller {
       return response()->json(['error' => $e->getMessage(), 'status' => 500 ], 500);
     }
   }
+
+  public function outhCallBack(Request $request)
+  {
+    try{
+      return $request;
+    }catch(RequestException $e){
+      return response()->json(['error' => $e->getMessage(), 'status' => 500 ], 500);
+    }
+  }
 }

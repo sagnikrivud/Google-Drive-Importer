@@ -28,11 +28,11 @@ class GoogleService {
     $this->googleClient->setAccessType('offline');
     $this->googleClient->addScope(\Google_Service_Drive::DRIVE_FILE);
     if ($request->has('code')) {
-      $client->fetchAccessTokenWithAuthCode($request->input('code'));
-      $accessToken = $client->getAccessToken();
+      return $this->googleClient->fetchAccessTokenWithAuthCode($request->input('code'));
+      return $accessToken = $this->googleClient->getAccessToken();
       } else {
       // Redirect to Google for authorization
-      $authUrl = $client->createAuthUrl();
+      $authUrl = $this->googleClient->createAuthUrl();
       return redirect()->to($authUrl);
     }
     $driveService = new \Google_Service_Drive($this->googleClient);

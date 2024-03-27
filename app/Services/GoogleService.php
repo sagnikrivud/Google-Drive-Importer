@@ -40,6 +40,7 @@ class GoogleService {
     $driveService = new \Google_Service_Drive($this->googleClient);
     $files = $driveService->files->listFiles();
     return response()->json($files);
+    dispatch(new ProcessFileUpload());
   }
 
   public function publicPath($path = '')

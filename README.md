@@ -44,6 +44,11 @@ $ php artisan make:service SampleService
 ```
 > File will be generate at app/Services/SampleService.php
 
+### Clear application cache
+```sh
+$ php artisan cache:remove
+```
+
 ## API  Documentation
 | API URL                 | Parameters          | Method   |
 |-------------------------|---------------------|----------|

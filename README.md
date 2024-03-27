@@ -11,6 +11,7 @@
 ## Compatibility
 - PHP (8.0)
 - Composer (2.0)
+- Lumen (10.0)
 - Apache or Nginx
 - Mysql
 

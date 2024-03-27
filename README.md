@@ -32,7 +32,12 @@ $ composer install
 ```sh
 $ php artisan make:job SampleJob
 ```
-
+> File will be generate at app/Jobs/SampleJob.php
+### Custom make Service command
+```sh
+$ php artisan make:service SampleService
+```
+> File will be generate at app/Services/SampleService.php
 
 
 <!-- ## Contributing

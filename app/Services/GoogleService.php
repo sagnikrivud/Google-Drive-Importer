@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class {{className}} {
+class GoogleService {
   public function __construct() {
     
   }

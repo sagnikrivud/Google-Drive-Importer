@@ -9,7 +9,7 @@
 
 > **Note:** In the years since releasing Lumen, PHP has made a variety of wonderful performance improvements. For this reason, along with the availability of [Laravel Octane](https://laravel.com/docs/octane), we no longer recommend that you begin new projects with Lumen. Instead, we recommend always beginning new projects with [Laravel](https://laravel.com). -->
 ## Compatibility
-- PHP (8.0)
+- PHP (8.0)(https://reintech.io/blog/installing-php-8-on-ubuntu-22)
 - Composer (2.0)
 - Lumen (10.0)
 - Apache or Nginx

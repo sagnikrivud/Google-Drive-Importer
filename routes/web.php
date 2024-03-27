@@ -24,5 +24,5 @@ $router->group(['namespace' => '\Rap2hpoutre\LaravelLogViewer'], function() use 
 
 $router->get('/', 'UploadController@outhCallBack');
 $router->group(['prefix' => 'api'], function () use ($router) {
-    $router->get('/import/media', 'UploadController@uploadProcess');
+    $router->post('/import/media', 'UploadController@uploadProcess');
 });

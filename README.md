@@ -28,7 +28,7 @@ $ cp .env.example .env
 ```sh
 $ composer install
 ```
-> Lumen Custom make Job command
+## Lumen Custom make Job command
 ```sh
 $ php artisan make:job SampleJob
 ``` 

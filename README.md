@@ -43,6 +43,10 @@ $ php artisan make:service SampleService
 ```
 > File will be generate at app/Services/SampleService.php
 
+## API  Documentation
+| API URL                 | Parameters          | Method   |
+|-------------------------|---------------------|----------|
+| `api/import/media`      | `public url`        | POST     |                    
 
 <!-- ## Contributing
 

@@ -49,6 +49,7 @@ $ php artisan make:service SampleService
 |-------------------------|---------------------|----------|
 | `api/import/media`      | `public url`        | POST     |                    
 
+Public Share URL(Example): https://www.dropbox.com/scl/fi/d9irp59qqlmfe0nvwcxn6/my-logo-1.mp3?rlkey=82bvxp7cjf6glsko6zw395tzv&dl=1 (Dropbox)
 <!-- ## Contributing
 
 Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions). -->

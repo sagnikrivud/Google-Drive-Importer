@@ -46,6 +46,23 @@ DB_PASSWORD=''
 ```sh
 $ php artisan migrate
 ```
+> Add permission to Storage folder
+```sh
+$ chmod -R 775 storage
+```
+> Configure .htaccess file
+```php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect to public directory
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+```
 
 ### Setup Superviser for Queue Job
 ```sh

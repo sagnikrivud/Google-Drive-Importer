@@ -22,6 +22,18 @@ class GoogleService {
    */
   public function uploadProcess($request)
   {
-    return true;
+    $apiKey = env('GOOGLE_API_KEY');
+    $url = 'https://www.googleapis.com/drive/v3/files?key=' . $apiKey;
+    $this->googleClient->setAuthConfig($this->publicPath('Google/client.json'));
+    $this->googleClient->setAccessType('offline');
+    $this->googleClient->addScope(\Google_Service_Drive::DRIVE_FILE);
+    $driveService = new \Google_Service_Drive($this->googleClient);
+    $files = $driveService->files->listFiles();
+    return response()->json($files);
+  }
+
+  public function publicPath($path = '')
+  {
+      return rtrim(app()->basePath('public/' . $path), '/');
   }
 }

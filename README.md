@@ -28,6 +28,10 @@ $ cp .env.example .env
 ```sh
 $ composer install
 ```
+> Update the Google Api key at .env (Refer: https://console.cloud.google.com/apis/)
+```env
+GOOGLE_API_KEY='your-google-api-key'
+```
 ### Custom make Job command
 ```sh
 $ php artisan make:job SampleJob

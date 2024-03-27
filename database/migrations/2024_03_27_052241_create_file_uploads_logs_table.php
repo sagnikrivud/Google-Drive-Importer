@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('file_uploads_logs', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid')->unique();
+            $table->string('request_url');
+            $table->string('file_type')->nullable();
+            $table->json('drive_response')->nullable();
+            $table->enum('status', ['inprogress', 'completed', 'failed'])->default('inprogress');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

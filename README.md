@@ -46,6 +46,15 @@ DB_PASSWORD=''
 ```sh
 $ php artisan migrate
 ```
+
+### Setup Superviser for Queue Job
+```sh
+$ apt-get install supervisor
+```
+```sh
+$ systemctl status supervisor
+```
+> Follow this documentation: https://cloudkul.com/blog/how-to-install-and-configure-supervisor-on-ubuntu-20-04/
 ### Custom make Job command
 ```sh
 $ php artisan make:job SampleJob

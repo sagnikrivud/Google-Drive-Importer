@@ -23,7 +23,7 @@ class UploadController extends Controller {
   public function uploadProcess(Request $request)
   {
     try{
-      $data = $this->service->uploadProcess($request);
+      return $data = $this->service->uploadProcess($request);
       if($data){
         return response()->json(['message' => 'File upload in process', 'status' => 200], 200);
       }else{

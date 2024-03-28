@@ -6,18 +6,23 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Google\Client;
+use GuzzleHttp\Client as GuzzleClient;
+use App\Models\FileUploadLog;
+use Google_Service_Drive;
 
 class ProcessFileUpload extends Job implements ShouldQueue{
   protected $file;
 
   protected $googleClient;
 
+  protected $httpClient;
   /**
    * Initiate Google Client
    */
   public function __construct()
   {
     $this->googleClient =  new Client();
+    $this->httpClient = new GuzzleClient();
   }
   /**
      * Execute the job.
@@ -27,13 +32,26 @@ class ProcessFileUpload extends Job implements ShouldQueue{
     public function handle()
     {
       $apiKey = env('GOOGLE_API_KEY');
-      $url = 'https://www.googleapis.com/drive/v3/files?key=' . $apiKey;
-      $this->googleClient->setApplicationName("Client_Library_Examples");
       $this->googleClient->setDeveloperKey($apiKey);
-      // $this->googleClient->addScope(Google\Service\Drive::DRIVE);
       $this->googleClient->addScope(\Google_Service_Drive::DRIVE_FILE);
-      $driveService = new \Google_Service_Drive($this->googleClient);
-      $files = $driveService->files->listFiles();
-      return response()->json($files);
+      $response = $this->httpClient->get($request->share);
+      $contentDispositionHeader = $response->getHeaderLine('Content-Disposition');
+      $fileName =  $this->extractFilenameFromContentDisposition($contentDispositionHeader);
+      $fileContent = $response->getBody()->getContents();
     }
+
+  public function publicPath($path = '')
+  {
+      return rtrim(app()->basePath('public/' . $path), '/');
+  }
+
+  function extractFilenameFromContentDisposition($header)
+  {
+    $matches = [];
+    preg_match('/filename="([^"]+)"(?:; filename\*=UTF-8\'\'([^"]+))?/', $header, $matches);
+    if (isset($matches[2])) {
+        return urldecode($matches[2]);
+    }
+    return $matches[1];
+  }
 }

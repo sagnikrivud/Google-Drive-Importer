@@ -95,6 +95,11 @@ $ php artisan cache:remove
 ### Lumen log viewer
 - Refer: https://github.com/rap2hpoutre/laravel-log-viewer 
 > Open `/logs`
+
+### Add this Package to Lumen to prevent Http Bridge Error
+```sh
+$ composer require symfony/psr-http-message-bridge
+```
 ## API  Documentation
 | API URL                 | Parameters          | Method   |
 |-------------------------|---------------------|----------|

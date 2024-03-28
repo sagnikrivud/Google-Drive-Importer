@@ -92,7 +92,9 @@ $ php artisan make:service SampleService
 ```sh
 $ php artisan cache:remove
 ```
-
+### Lumen log viewer
+- Refer: https://github.com/rap2hpoutre/laravel-log-viewer 
+> Open `/logs`
 ## API  Documentation
 | API URL                 | Parameters          | Method   |
 |-------------------------|---------------------|----------|

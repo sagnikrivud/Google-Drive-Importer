@@ -30,7 +30,8 @@ class ProcessFileUpload extends Job implements ShouldQueue{
       $url = 'https://www.googleapis.com/drive/v3/files?key=' . $apiKey;
       $this->googleClient->setApplicationName("Client_Library_Examples");
       $this->googleClient->setDeveloperKey($apiKey);
-      $this->googleClient->addScope(Google\Service\Drive::DRIVE);
+      // $this->googleClient->addScope(Google\Service\Drive::DRIVE);
+      $this->googleClient->addScope(\Google_Service_Drive::DRIVE_FILE);
       $driveService = new \Google_Service_Drive($this->googleClient);
       $files = $driveService->files->listFiles();
       return response()->json($files);

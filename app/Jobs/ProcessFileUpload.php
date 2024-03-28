@@ -38,6 +38,22 @@ class ProcessFileUpload extends Job implements ShouldQueue{
       $contentDispositionHeader = $response->getHeaderLine('Content-Disposition');
       $fileName =  $this->extractFilenameFromContentDisposition($contentDispositionHeader);
       $fileContent = $response->getBody()->getContents();
+      $fileMetadata = new \Google_Service_Drive_DriveFile([
+        'name' => $fileName
+      ]);
+      $googleDriveService = new Google_Service_Drive($this->googleClient);
+      $uploadedFile = $googleDriveService->files->create($fileMetadata, [
+        'data' => $fileContent,
+        'mimeType' => 'application/octet-stream',
+        'uploadType' => 'multipart'
+      ]);
+      $data = [
+        'request_url' => $request->share,
+        'file_type'   => 'URL',
+        'drive_response' => $uploadedFile
+      ];
+      FileUploadLog::create($data);
+      return response()->json($uploadedFile);
     }
 
   public function publicPath($path = '')
@@ -45,7 +61,7 @@ class ProcessFileUpload extends Job implements ShouldQueue{
       return rtrim(app()->basePath('public/' . $path), '/');
   }
 
-  function extractFilenameFromContentDisposition($header)
+  public function extractFilenameFromContentDisposition($header)
   {
     $matches = [];
     preg_match('/filename="([^"]+)"(?:; filename\*=UTF-8\'\'([^"]+))?/', $header, $matches);

@@ -15,6 +15,12 @@ class EventServiceProvider extends ServiceProvider
         \App\Events\ExampleEvent::class => [
             \App\Listeners\ExampleListener::class,
         ],
+        JobProcessed::class => [
+            \App\Listeners\EmptyJobsTable::class,
+        ],
+        JobFailed::class => [
+            \App\Listeners\EmptyJobsTable::class,
+        ],
     ];
 
     /**

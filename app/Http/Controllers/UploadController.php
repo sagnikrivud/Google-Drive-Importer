@@ -37,7 +37,7 @@ class UploadController extends Controller {
   public function outhCallBack(Request $request)
   {
     try{
-      return $request;
+      return !empty($request['attributes']) ? $request : response()->json(['Application' => 'Google Drive media uploader']);
     }catch(RequestException $e){
       return response()->json(['error' => $e->getMessage(), 'status' => 500 ], 500);
     }

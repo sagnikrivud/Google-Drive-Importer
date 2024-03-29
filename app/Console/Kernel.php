@@ -16,7 +16,8 @@ class Kernel extends ConsoleKernel
         Commands\MakeJob::class,
         Commands\MakeService::class,
         Commands\CacheClear::class,
-        Commands\MakeCommand::class
+        Commands\MakeCommand::class,
+        Commands\ProcessQueue::class,
     ];
 
     /**

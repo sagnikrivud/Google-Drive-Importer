@@ -61,6 +61,7 @@ $app->singleton(
 */
 
 $app->configure('app');
+$app->configure('queue');
 
 /*
 |--------------------------------------------------------------------------
@@ -113,5 +114,9 @@ $app->router->group([
 ], function ($router) {
     require __DIR__.'/../routes/web.php';
 });
+
+$app->isDownForMaintenance = function () {
+    return false; // Or implement your own logic to determine maintenance mode
+};
 
 return $app;

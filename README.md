@@ -131,7 +131,7 @@ $ cp vendor/laravel/lumen-framework/config/logging.php config/logging.php
 ```php
 $app->configure('logging');
 ```
-### Install Illuminate Mail for Mailing feature
+## Install Illuminate Mail for Mailing feature
 ```sh
 $ composer require composer require illuminate/mail:* --with-all-dependencies
 ```
@@ -139,7 +139,7 @@ $ composer require composer require illuminate/mail:* --with-all-dependencies
 ```php
 $app->configure('mail');
 ```
-### Install Redis for Lumen
+## Install Redis for Lumen
 ```sh
 $ composer require illuminate/redis:* --with-all-dependencies
 ```

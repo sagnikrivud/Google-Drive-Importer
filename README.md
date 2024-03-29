@@ -109,7 +109,11 @@ $ php artisan make:command SampleCommand
 ```sh
 $ composer require symfony/psr-http-message-bridge
 ```
-
+### Create the Queue config file from vendor
+```sh
+cp cp vendor/laravel/lumen-framework/config/queue.php config/queue.php
+```
+- Refer: https://lumen.laravel.com/docs/10.x/queues
 ### Home
 ![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)
 

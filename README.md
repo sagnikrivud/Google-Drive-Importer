@@ -130,6 +130,9 @@ $ php artisan queue:failed-table
 ### Additional Supported Environment
 ![](https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png)
 
+### SQS Supported
+![](https://miro.medium.com/v2/resize:fit:360/1*qoA4HkaQTAAWHb_tMTi0UA.png)
+
 ## API  Documentation
 | API URL                 | Parameters          | Method   |
 |-------------------------|---------------------|----------|

@@ -139,6 +139,13 @@ $ composer require composer require illuminate/mail:* --with-all-dependencies
 ```php
 $app->configure('mail');
 ```
+### Install Redis for Lumen
+```sh
+$ composer require illuminate/redis:* --with-all-dependencies
+```
+```php
+$app->register(Illuminate\Redis\RedisServiceProvider::class);
+```
 ### Home
 ![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)
 

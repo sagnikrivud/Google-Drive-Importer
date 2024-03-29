@@ -96,6 +96,12 @@ $ php artisan cache:remove
 - Refer: https://github.com/rap2hpoutre/laravel-log-viewer 
 > Open `/logs`
 
+### Make Custom Commands
+```sh
+$ php artisan make:command SampleCommand
+```
+> File will generate at app/Console/Commands/
+
 ### Add this Package to Lumen to prevent Http Bridge Error
 ```sh
 $ composer require symfony/psr-http-message-bridge

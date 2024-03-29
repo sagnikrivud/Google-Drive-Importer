@@ -12,6 +12,7 @@
         "guzzlehttp/guzzle": "^7.8",
         "illuminate/mail": "*",
         "illuminate/redis": "*",
+        "laravel/legacy-factories": "^1.4",
         "laravel/lumen-framework": "^10.0",
         "predis/predis": "^2.2",
         "rap2hpoutre/laravel-log-viewer": "^2.4",

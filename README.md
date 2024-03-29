@@ -136,6 +136,9 @@ $app->configure('logging');
 $ composer require composer require illuminate/mail:* --with-all-dependencies
 ```
 - [May be differ from Official document](https://lumen.laravel.com/docs/10.x/mail)
+```php
+$app->configure('mail');
+```
 ### Home
 ![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)
 

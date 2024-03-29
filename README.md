@@ -106,6 +106,9 @@ $ php artisan make:command SampleCommand
 ```sh
 $ composer require symfony/psr-http-message-bridge
 ```
+
+### Home
+![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)
 ## API  Documentation
 | API URL                 | Parameters          | Method   |
 |-------------------------|---------------------|----------|

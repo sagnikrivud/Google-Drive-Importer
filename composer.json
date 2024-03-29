@@ -14,6 +14,7 @@
         "illuminate/redis": "*",
         "laravel/legacy-factories": "^1.4",
         "laravel/lumen-framework": "^10.0",
+        "nyholm/psr7": "^1.8",
         "predis/predis": "^2.2",
         "rap2hpoutre/laravel-log-viewer": "^2.4",
         "symfony/psr-http-message-bridge": "^7.0"

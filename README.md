@@ -113,7 +113,7 @@ $ composer require symfony/psr-http-message-bridge
 ```sh
 $ cp vendor/laravel/lumen-framework/config/queue.php config/queue.php
 ```
-> After that `bootstrap/app.php` add this line
+> After that at `bootstrap/app.php` add this line
 ```php
 $app->configure('queue');
 ```

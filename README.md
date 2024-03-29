@@ -124,6 +124,13 @@ $ php artisan queue:table
 $ php artisan queue:failed-table
 ```
 - Refer: https://lumen.laravel.com/docs/10.x/queues
+## Create Logging Configuration Files
+```sh
+$ cp vendor/laravel/lumen-framework/config/logging.php config/logging.php
+```
+```php
+$app->configure('logging');
+```
 ### Home
 ![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)
 

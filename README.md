@@ -156,6 +156,9 @@ $app->register(Illuminate\Redis\RedisServiceProvider::class);
 ### SQS Supported
 ![](https://miro.medium.com/v2/resize:fit:360/1*qoA4HkaQTAAWHb_tMTi0UA.png)
 
+### Redis Queue Supported
+![](https://brandslogos.com/wp-content/uploads/images/redis-logo.png)
+
 ## API  Documentation
 | API URL                 | Parameters          | Method   |
 |-------------------------|---------------------|----------|

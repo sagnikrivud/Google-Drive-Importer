@@ -117,6 +117,12 @@ $ cp vendor/laravel/lumen-framework/config/queue.php config/queue.php
 ```php
 $app->configure('queue');
 ```
+```sh
+$ php artisan queue:table
+```
+```sh
+$ php artisan queue:failed-table
+```
 - Refer: https://lumen.laravel.com/docs/10.x/queues
 ### Home
 ![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)

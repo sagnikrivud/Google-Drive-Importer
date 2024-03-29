@@ -143,6 +143,7 @@ $app->configure('mail');
 ```sh
 $ composer require illuminate/redis:* --with-all-dependencies
 ```
+> Add this code to `boostrap/app.php`
 ```php
 $app->register(Illuminate\Redis\RedisServiceProvider::class);
 ```

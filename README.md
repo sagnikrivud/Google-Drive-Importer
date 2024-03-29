@@ -96,7 +96,7 @@ $ php artisan cache:remove
 ```
 ### Lumen log viewer
 ![Log](blobs/Laravel-log-viewer.png)
-- Refer: https://github.com/rap2hpoutre/laravel-log-viewer 
+- Refer: https://github.com/rap2hpoutre/laravel-log-viewer (Lumen part)
 > Open `/logs`
 
 ### Make Custom Commands

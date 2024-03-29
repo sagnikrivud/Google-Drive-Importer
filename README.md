@@ -131,6 +131,14 @@ $ cp vendor/laravel/lumen-framework/config/logging.php config/logging.php
 ```php
 $app->configure('logging');
 ```
+### Install Illuminate Mail for Mailing feature
+```sh
+$ composer require composer require illuminate/mail:* --with-all-dependencies
+```
+- [May be differ from Official document](https://lumen.laravel.com/docs/10.x/mail)
+```php
+$app->configure('mail');
+```
 ### Home
 ![Preview](blobs/Online-JSON-Viewer-and-Formatter.png)
 

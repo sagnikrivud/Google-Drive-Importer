@@ -26,6 +26,11 @@ $ git clone https://github.com/sagnikcapital/Google-Drive-Up-loader.git
 ```sh
 $ cp .env.example .env
 ```
+> Composer install
+```sh
+$ composer install
+```
+
 > Generate Application Key
 ```sh
 $ php -r "echo bin2hex(random_bytes(16));"
@@ -36,10 +41,7 @@ $ php -r "echo bin2hex(random_bytes(16));"
 ```sh
 $ php artisan application:secret
 ```
-> Composer install
-```sh
-$ composer install
-```
+
 > Update the Google Api key at .env (Refer: https://console.cloud.google.com/apis/)
 ```env
 GOOGLE_API_KEY='your-google-api-key'

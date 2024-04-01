@@ -35,7 +35,7 @@ $ composer install
 ```sh
 $ php -r "echo bin2hex(random_bytes(16));"
 ```
-- Copy the string and paste at.env at APP_KEY value
+- Copy the string and paste at `.env` at `APP_KEY` value
 
 > Or, You can generate the App key by using this Custom command
 ```sh

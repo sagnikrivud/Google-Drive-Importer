@@ -41,7 +41,7 @@ $ php -r "echo bin2hex(random_bytes(16));"
 ```sh
 $ php artisan application:secret
 ```
-
+- As Lumen does not provide Default key Generate command
 > Update the Google Api key at .env (Refer: https://console.cloud.google.com/apis/)
 ```env
 GOOGLE_API_KEY='your-google-api-key'

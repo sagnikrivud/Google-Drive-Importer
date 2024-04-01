@@ -30,6 +30,10 @@ $ cp .env.example .env
 ```sh
 $ php -r "echo bin2hex(random_bytes(16));"
 ```
+> Or, You can generate the App key by using this Custom command
+```sh
+$ php artisan application:secret
+```
 - Copy the string and paste at.env at APP_KEY value
 > Composer install
 ```sh

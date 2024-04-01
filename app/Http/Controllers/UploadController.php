@@ -30,6 +30,7 @@ class UploadController extends Controller {
         return response()->json(['message' => 'Error on process', 'status' => 500], 500);
       }
     }catch(RequestException $e){
+      \Log::error($e->getMessage());
       return response()->json(['error' => $e->getMessage(), 'status' => 500 ], 500);
     }
   }

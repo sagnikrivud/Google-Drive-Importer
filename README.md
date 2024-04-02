@@ -173,7 +173,7 @@ $app->register(Illuminate\Redis\RedisServiceProvider::class);
 ![](https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png)
 
 ### SQS Supported
-![](https://miro.medium.com/v2/resize:fit:360/1*qoA4HkaQTAAWHb_tMTi0UA.png)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfTIrzN2PXOw5i-bioGFSvvgt2dIzluBy1NjT3JMLvVQ&s)
 
 ### Redis Queue Supported
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6RhICe5KPf2Ly7yVEw2mLsZIULR-VP7NMwzTsbvKIQ&s)

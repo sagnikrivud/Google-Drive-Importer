@@ -25,7 +25,7 @@
 <!-- - ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=plastic&logo=mysql&logoColor=white)  -->
 - [Mysql](https://dev.mysql.com/doc/mysql-getting-started/en/)
 
-## Setup
+## Setup & Installation
 > Clone the repo
 ```sh
 $ git clone https://github.com/sagnikcapital/Google-Drive-Up-loader.git

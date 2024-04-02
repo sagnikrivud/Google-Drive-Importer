@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
         Commands\CacheClear::class,
         Commands\MakeCommand::class,
         Commands\ProcessQueue::class,
+        Commands\ApplicationKey::class
     ];
 
     /**

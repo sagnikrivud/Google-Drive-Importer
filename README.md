@@ -179,7 +179,9 @@ $app->register(Illuminate\Redis\RedisServiceProvider::class);
 |-------------------------|---------------------|----------|
 | `api/import/media`      | `public url`        | POST     |                    
 
-Public Share URL(Example): https://www.dropbox.com/scl/fi/d9irp59qqlmfe0nvwcxn6/my-logo-1.mp3?rlkey=82bvxp7cjf6glsko6zw395tzv&dl=1 (Dropbox)
+Public Share URL(Example): 
+[![Dropbox](https://img.shields.io/badge/Dropbox-Download-blue?style=for-the-badge&logo=dropbox)](https://www.dropbox.com/scl/fi/d9irp59qqlmfe0nvwcxn6/my-logo-1.mp3?dl=1)
+
 <!-- ## Contributing
 
 Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions). -->

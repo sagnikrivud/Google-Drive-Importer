@@ -17,7 +17,7 @@
 <!-- [Composer (2.0)](https://getcomposer.org/download) -->
 - ![Lumen](https://img.shields.io/badge/lumen-%23E74430.svg?style=plastic&logo=lumen&logoColor=white)
 <!-- [Lumen (10.0)]() -->
-- ![Apache 2.0](https://img.shields.io/badge/apache-%23000000.svg?style=plastic&logo=apache&logoColor=white)
+- ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=plastic&logo=apache&logoColor=white)
 <!-- [Apache or Nginx](https://ubuntu.com/tutorials/install-and-configure-apache#2-installing-apache) -->
 - ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=plastic&logo=mysql&logoColor=white) 
 <!-- [Mysql](https://dev.mysql.com/doc/mysql-getting-started/en/) -->

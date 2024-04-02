@@ -85,6 +85,10 @@ $ chmod -R 775 storage
 # Disable directory listing
 Options -Indexes
 ```
+> Run dev server at `8000` port
+```sh
+$ php -S localhost:8000 -t public
+```
 
 ### Setup Superviser for Queue Job
 ```sh

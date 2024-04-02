@@ -85,7 +85,7 @@ $ chmod -R 775 storage
 # Disable directory listing
 Options -Indexes
 ```
-> Run dev server at `8000` port
+> Run dev server at `8000` port at Local System
 ```sh
 $ php -S localhost:8000 -t public
 ```

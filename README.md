@@ -11,7 +11,7 @@
 ### Version
 ![version](blobs/localhost-8000.png)
 ## Compatibility
-- [PHP (8.0)](https://reintech.io/blog/installing-php-8-on-ubuntu-22)
+- ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=plastic&logo=php&logoColor=white) [PHP (8.0)](https://reintech.io/blog/installing-php-8-on-ubuntu-22)
 - [Composer (2.0)](https://getcomposer.org/download)
 - [Lumen (10.0)]()
 - [Apache or Nginx](https://ubuntu.com/tutorials/install-and-configure-apache#2-installing-apache)

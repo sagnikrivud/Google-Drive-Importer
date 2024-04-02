@@ -11,15 +11,15 @@
 ### Version
 ![version](blobs/localhost-8000.png)
 ## Compatibility
-- ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=plastic&logo=php&logoColor=white) 
+- ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=plastic&logo=php&logoColor=white) (V:8.0)
 <!-- [PHP (8.0)](https://reintech.io/blog/installing-php-8-on-ubuntu-22) -->
-- ![Composer](https://img.shields.io/badge/composer-%23000000.svg?style=plastic&logo=composer&logoColor=white)  
+- ![Composer](https://img.shields.io/badge/composer-%23000000.svg?style=plastic&logo=composer&logoColor=white) (V:2.0)
 <!-- [Composer (2.0)](https://getcomposer.org/download) -->
-- ![Lumen](https://img.shields.io/badge/lumen-%23E74430.svg?style=plastic&logo=lumen&logoColor=white)
+- ![Lumen](https://img.shields.io/badge/lumen-%23E74430.svg?style=plastic&logo=lumen&logoColor=white) (V:10.0)
 <!-- [Lumen (10.0)]() -->
-- ![Apache](https://img.shields.io/badge/apache-%23000000.svg?style=plastic&logo=apache&logoColor=white) 
+- ![Apache](https://img.shields.io/badge/apache-%23000000.svg?style=plastic&logo=apache&logoColor=white) (V:2.0)
 <!-- [Apache or Nginx](https://ubuntu.com/tutorials/install-and-configure-apache#2-installing-apache) -->
-- ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=plastic&logo=mysql&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=plastic&logo=mysql&logoColor=white) 
 <!-- [Mysql](https://dev.mysql.com/doc/mysql-getting-started/en/) -->
 
 ## Setup
